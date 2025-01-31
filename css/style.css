@@ -1,0 +1,548 @@
+/* 
+Warna Utama:
+Biru laut (#0077B6) – untuk header, menu, atau elemen utama.
+Putih (#FFFFFF) – untuk latar belakang utama agar bersih dan profesional.
+Aksen:
+Kuning cerah (#FFD60A) – untuk tombol aksi atau highlight.
+Warna pasir (#F4A261) – untuk bagian footer atau latar.
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    /* background-color: rgb(229, 253, 255); */
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: rgb(147,176,255);
+    background: linear-gradient(107deg, rgba(147,176,255,1) 0%, rgba(98,159,255,1) 24%, rgba(0,90,252,1) 100%);
+    padding: 1rem 2rem;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid #000;
+    z-index: 99998;
+}
+
+header .logo img {
+    width: 100%;
+    height: 10vh;
+}
+
+header nav ul,
+.extraNav ul {
+    list-style: none;
+    display: flex;
+}
+
+header a {
+    color: #000;
+    font-size: 1.05rem;
+}
+
+header .title a {
+    font-size: 2rem;
+}
+
+header nav ul li {
+    padding: 0 0.5rem;
+    transition: 0.2s ease-in-out;
+}
+
+nav ul li:hover {
+    transform: translateY(-3px);
+}
+
+.extraNav {
+    display: none;
+}
+
+section {
+    scroll-margin-top: 6rem;
+}
+
+.hero,
+.herowrap,
+.herolist,
+.heroitem {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.hero {
+    width: 98%;
+    height: 40vh;
+    margin: 1rem;
+    margin-top: 17vh;
+}
+
+.hero .herocard {
+    margin: 0 0.3rem;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border: 1px solid #000;
+}
+
+.hero .herotext {
+    height: 26%;
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.herotext p,
+.herotext h3 {
+    margin-left: 2rem;
+}
+
+.hero .herocard img {
+    position: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.herocard,
+.herocard img,
+.herotext {
+    border-radius: 8px;
+}
+
+.menu {
+    border-top: 1px solid #000;
+    width: 100%;
+    height: 41.5vh;
+    background-color: #fff;
+    /* background: rgb(67, 155, 255);
+    background: radial-gradient(
+        circle,
+        #bbdffb 0%,
+        #90cbf9 61%,
+        rgb(100, 183, 246) 100%
+    ); */
+    padding: 2rem;
+    border-bottom: 3px solid #eaeaea;
+}
+
+.menu .cardmenu {
+    width: 100%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    margin: auto;
+    list-style: none;
+}
+
+.menu .card {
+    display: inline-block; 
+    width: 18vw; 
+    height: 11vh; 
+    text-align: center; 
+    line-height: 10vh;
+    text-decoration: none; 
+    color: #000; 
+    border: 2px solid #000; 
+    border-radius: 10px; 
+    background-color: rgba(249, 23, 234, 0); 
+    margin: auto; 
+    transition: transform 0.3s ease-in-out;
+    font-size: 1rem;
+}
+
+.menu .card.doubles {
+    line-height: 1;
+    padding-top: 1.5rem;
+}
+
+.menudisplay .double {
+    display: flex;
+    align-items: center;
+}
+
+.menu .card:hover {
+    transform: scale(1.05);
+}
+
+.menudisplay, .popup{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    display: none;
+    /* margin-top: -100px;
+    margin-left: -100px; */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menudisplay.active, .popup.active {
+    display: inline-block;
+}
+
+.menudisplay .displaycard {
+    margin: 5rem auto;
+    height: 80%;
+    width: 38%;
+    background-color: #eaeaea;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.menudisplay .displaycard h2, .popup .popupcard h1 {
+    padding: 2rem;
+}
+
+.menudisplay .displaycard p{
+    padding: 1.5rem 4rem 0;
+    font-size: 130%;
+}
+
+.menudisplay .displaycard a {
+    display: inline-block; 
+    width: 80%; 
+    height: 11vh; 
+    text-align: center; 
+    line-height: 10vh;
+    text-decoration: none; 
+    color: #000; 
+    border: 2px solid #000; 
+    border-radius: 10px; 
+    margin: 2rem auto; 
+    transition: transform 0.3s ease-in-out;
+    font-size: 1rem;
+    bot: 0;
+}
+
+
+
+.menudisplay .displaycard a img {
+    height: 3.5vh;
+    weight: 100%;
+}
+
+.menudisplay .displaycard .wa {
+    background-color: rgba(3, 251, 57, 1);
+}
+.menudisplay .displaycard .tele {
+    background-color: rgb(3, 205, 251);
+}
+
+.popup .popupcard {
+    margin: 5rem auto;
+    height: 80%;
+    width: 80%;
+    background-color: #eaeaea;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.popup .popupcard p{
+    text-align: justify;
+    font-size: 124%;
+    margin: 5rem;
+    margin-top: 0;
+}
+
+.popup .popupcard .klik {
+    text-align: center;
+    margin: auto;
+    bottom: 0;
+}
+
+.popup .popupcard .x-button{
+    position: absolute;
+    right: 1.5rem;
+    top: 1rem;
+
+}
+
+.penjelasan .headpenjelasan,
+.tujuan .headtujuan,
+.sejarah .headsejarah {
+    margin-left: 2rem;
+    padding: 1rem 0;
+}
+
+.penjelasancontent,
+.tujuancontent,
+.sejarahcontent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tujuancontent img {
+    width: 25vw;
+    height: 100%;
+    border-radius: 20px;
+    objec-fit: cover;
+}
+
+.sejarahcontent img {
+    width: 40vw;
+    height: 100%;
+    border-radius: 20px;
+    objec-fit: cover;
+}
+
+.penjelasan .articlepenjelasan,
+.tujuan .articletujuan,
+.sejarah .articlesejarah {
+    padding: 1rem;
+    width: 50%;
+    text-align: justify;
+}
+
+.tujuan .articletujuan {
+    padding: 0 4rem;
+}
+
+.tujuan,
+.penjelasan,
+.sejarah {
+    padding: 2rem;
+    /* background-color: rgb(229, 253, 255); */
+}
+
+.contact {
+    padding-bottom: 2rem;
+    width: 100%;
+    margin: auto;
+    background: #fff;
+    /* border-radius: 30px; */
+    /* border: 1px solid #000; */
+    border-bottom: 2.5rem solid #eaeaea;
+    border-top: 1rem solid #eaeaea;
+}
+
+.headcontact {
+    text-align: center;
+    padding: 1.5rem 0;
+    padding-bottom: 0;
+    background: #eaeaea;
+}
+
+.contact .contactcontent {
+    padding: 2rem;
+}
+
+.contact .articlecontact {
+    display: flex;
+    text-align: left;
+}
+
+.contact .articlecontact aside {
+    margin-left: 3rem;
+}
+.contact .articlecontact aside h3{
+    margin-bottom: 1rem;
+}
+
+.contact .articlecontact aside a {
+    margin: 1rem;
+}
+
+.contact .articlecontact article a{
+    display: block; /* Ubah elemen menjadi blok inline */
+    width: 18vw; /* Tetapkan lebar seragam */
+    height: 7vh; /* Tetapkan tinggi seragam */
+    text-align: center; /* Pusatkan teks secara horizontal */
+    line-height: 7vh;
+    text-decoration: none; /* Hilangkan garis bawah */
+    color: #000; /* Warna teks */
+    border: 2px solid #000; /* Tambahkan border */
+    border-radius: 10px; /* Opsional: sudut melengkung */
+    /* Opsional: warna latar */
+    margin: 1rem; /* Jarak antar elemen */
+    transition: transform 0.3s ease-in-out;
+    font-size: 1rem;
+    bot: 0;
+}
+
+.setting {
+    padding: 0.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4a261;
+}
+
+.setting .addres {
+}
+
+.medsos {
+    margin-left: 2rem;
+}
+
+.medsos ul {
+    list-style: none;
+}
+
+.medsos ul li a {
+    display: block; /* Ubah elemen menjadi blok inline */
+    width: 18vw; /* Tetapkan lebar seragam */
+    height: 7vh; /* Tetapkan tinggi seragam */
+    text-align: center; /* Pusatkan teks secara horizontal */
+    line-height: 7vh;
+    text-decoration: none; /* Hilangkan garis bawah */
+    color: #000; /* Warna teks */
+    border: 2px solid #000; /* Tambahkan border */
+    border-radius: 10px; /* Opsional: sudut melengkung */
+    /* Opsional: warna latar */
+    margin: 1rem; /* Jarak antar elemen */
+    transition: transform 0.3s ease-in-out;
+    font-size: 1rem;
+    bot: 0;
+}
+
+#tt {
+    background-color:rgb(5, 5, 5);
+    color: #fff;
+}
+
+#ig {
+    background-color:rgb(246, 47, 176);
+    color: #fff;
+}
+
+#wh {
+    background-color:rgb(0, 255, 42);
+    color: #000;
+}
+
+footer {
+    background: rgb(147,176,255);
+background: linear-gradient(107deg, rgba(147,176,255,1) 0%, rgba(98,159,255,1) 24%, rgba(0,90,252,1) 100%);
+    padding: 0.5rem;
+    text-align: center;
+}
+
+/* Media Queries */
+
+/* Tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 80%;
+    }
+
+    header {
+        /* position: sticky; */
+    }
+
+    .extraNav {
+        display: inline-block;
+    }
+
+    .navbar {
+        /* display: none; */
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        height: 100vh;
+        width: 40vw;
+        background: rgb(147,176,255);
+background: linear-gradient(107deg, rgba(147,176,255,1) 0%, rgba(98,159,255,1) 0%, rgba(0,90,252,1) 100%);
+        border-left: 2px solid rgb(0, 0, 0);
+        border-top: 2px solid rgb(0, 0, 0);
+        /* transform: translateX(100%); */
+        transition: 0.3s;
+    }
+
+    .navbar.active {
+        right: 0;
+        /* display: inline-block; */
+    }
+
+    .navbar ul {
+        display: block;
+    }
+
+    .navbar ul li {
+        padding: 1.3rem 0;
+        margin: 0 0.9rem;
+        border-bottom: 2px solid rgb(0, 0, 0);
+    }
+
+    .navbar ul li a {
+        font-size: 2.6rem;
+    }
+
+    .navbar ul li:hover {
+        transform: translateX(8px);
+    }
+
+    .menudisplay .displaycard {
+        height: 80%;
+        width: 60%;
+        font-size: 150%;
+    }
+    .menudisplay .displaycard a {
+        font-size: 95%;
+    }
+    .tujuancontent {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .tujuancontent .articletujuan{
+        width: 100%;
+        padding: 3rem 0;
+    }
+
+    .tujuancontent .righttujuan {
+        transform: translateX(43%);
+    }
+
+    .tujuancontent img {
+        width: 50vw;
+        height: 100%;
+        border-radius: 20px;
+        objec-fit: cover;
+    }
+}
+
+/* Handphone */
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+
+    .menu .card.doubles {
+        line-height: 1;
+        padding-top: 3rem;
+    }
+
+    .menudisplay .displaycard {
+        height: 70%;
+        width: 66%;
+        font-size: 150%;
+    }
+    .menudisplay .displaycard a {
+        font-size: 98%;
+    }
+}

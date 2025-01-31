@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: rgba(127, 234, 255, 0.5);
+    background: linear-gradient(100deg, #bbdffb 0%, #90cbf9 54%, #64b7f6 100%);
+    padding: 1rem 2rem;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #000;
+    z-index: 99998;
+}
+
+header .back {
+    cursor: pointer;
+    transform: scale(1.5); 
+    display: inline-block;
+}
+
+header .logo img {
+    width: 100%;
+    height: 10vh;
+}
+
+header .title {
+    font-size: 1.3rem;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+}
+
+.container .map{
+    display: flex;
+    margin: 1.5rem 1rem;
+}
+
+.container .map iframe{
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+    border: none;
+    border-radius: 20px;
+}
+
+main {
+    padding: 2rem;
+}
+
+main .title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+main .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+}
+
+main .card {
+    display: flex;
+    width: 90%;
+    margin: 0 auto 1rem;
+    /* border: 1px solid #000; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    background-color:rgb(243, 243, 243);
+}
+
+main .card img {
+    width: 15vw;
+    height: 38vh;
+    margin: 1rem;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+main .card .article {
+    margin: 1rem;
+}
+
+main .card .article h2{
+    margin-bottom: 0.7rem;
+}
+
+main .card .article p{
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.97rem;
+}
+
+footer {
+    background: rgba(127, 234, 255, 0.5);
+    background: linear-gradient(100deg, #bbdffb 0%, #90cbf9 54%, #64b7f6 100%);
+    padding: 0.5rem;
+    text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    html {
+        font-size: 80%;
+    }
+    main .content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+    }
+    main .card img {
+        width: 40vw;
+        height: 38vh;
+        margin: 1rem;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 65%;
+    }

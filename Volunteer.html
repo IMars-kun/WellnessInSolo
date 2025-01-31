@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Volunteer</title>
+
+        <!-- Google Font Poppins -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Feather Icons -->
+        <script src="https://unpkg.com/feather-icons"></script>
+
+        <!-- Css External -->
+        <link rel="stylesheet" href="css/volun.css" />
+    </head>
+    <body>
+        <header>
+            <div class="back" id="back"><i data-feather="arrow-left"></i></div>
+            <div class="title"><h1>WellnessInSolo</h1></div>
+            <div class="logo"><img src="image/Logo.png" alt="Logo" /></div>
+        </header>
+        <div class="container">
+            <div class="content">
+                <div class="header">
+                    <h1>Volunteer</h1>
+                    <img src="" alt="Volunteer" />
+                </div>
+                <p>
+                    Kegiatan Volunteer diadakan untuk membangun kerjasama antara
+                    pemerintah dan anak muda dalam mewujudkan Kota Surakarta menjadi
+                    Wellness City sepenuhnya. Yakni melalui berbagai kegiatan yang
+                    dapat memanfaatkan tenaga serta pengetahuan anak muda demi
+                    kemajuan Kota Surakarta sebagai Wellness City.
+                    <br> <br>
+                </p>
+                <ol>
+                    <li>
+                        Solo Hijau <br> Solo hijau merupakan kegiatan untuk para
+                        sukarelawan menanam pohon di wilayah yang sudah disediakan
+                        oleh pihak penyelenggara. Hal ini dilakukan demi memenuhi
+                        kebijakan Wellness City yang mendukung gaya hidup sehat.
+                    </li>
+                </ol>
+            </div>
+            <div class="documentation">
+                <h2 class="title">Documentation</h2>
+                <div class="content" id="content">
+                    <div class="img">
+                        <img src="img/miku.jpg" alt="picture 1" />
+                        <h3>Title</h3>
+                        <p>Date :</p>
+                    </div>
+                    <div class="img">
+                        <img src="img/miku.jpg" alt="picture 1" />
+                        <h3>Title</h3>
+                        <p>Date :</p>
+                    </div>
+                    <div class="img">
+                        <img src="img/miku.jpg" alt="picture 1" />
+                        <h3>Title</h3>
+                        <p>Date :</p>
+                    </div>
+                    <div class="img">
+                        <img src="img/miku.jpg" alt="picture 1" />
+                        <h3>Title</h3>
+                        <p>Date :</p>
+                    </div>
+                    <div class="img">
+                        <img src="img/miku.jpg" alt="picture 1" />
+                        <h3>Title</h3>
+                        <p>Date :</p>
+                    </div>
+                    <div class="lastimg">
+                        <img src="img/miku.jpg" alt="picture 1" />
+                        <h3>Title</h3>
+                        <p>Date :</p>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <button onclick="displayForm()">Join Us !!</button>
+            </div>
+            <div class="form" id="form">
+                <h3>FORM PENDAFTARAN</h3>
+                <form id="" action="" method="">
+                    <label for="name">Nama</label>
+                    <input
+                        id="name"
+                        type="text"
+                        name="name"
+                        placeholder="Nama..."
+                        required
+                    />
+
+                    <label for="email">Email</label>
+                    <input
+                        id="email"
+                        type="email"
+                        name="email"
+                        placeholder="example@gmail.com"
+                        required
+                    />
+
+                    <label id="number" for="">No Handphone</label>
+                    <input
+                        type="text"
+                        name="number"
+                        placeholder="08...."
+                        required
+                    />
+
+                    <label for="domisili">Domisili</label>
+                    <input
+                        id="domisili"
+                        type="text"
+                        name="domisili"
+                        placeholder="Domisili..."
+                        required
+                    />
+
+                    <label>Jenis Kelamin</label>
+                    <label>
+                        <input
+                            type="radio"
+                            name="jenis_kelamin"
+                            value="laki-laki"
+                        />
+                        Laki-laki
+                    </label>
+                    <label>
+                        <input
+                            type="radio"
+                            name="jenis_kelamin"
+                            value="perempuan"
+                        />
+                        Perempuan
+                    </label>
+                    <input type="submit" value="Submit" />
+                </form>
+            </div>
+        </div>
+        <footer class="copyright"><p>©WellnessInSolo</p></footer>
+
+        <script>
+            feather.replace();
+        </script>
+        <script src="js/volun.js"></script>
+    </body>
+</html>

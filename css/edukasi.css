@@ -1,0 +1,190 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 105%;
+}
+
+body {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+p {
+    text-align: justify;
+}
+
+.displaycard p {
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: rgba(127, 234, 255, 0.5);
+    background: linear-gradient(100deg, #bbdffb 0%, #90cbf9 54%, #64b7f6 100%);
+    padding: 1rem 2rem;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid #000;
+    z-index: 99998;
+}
+
+header .back {
+    cursor: pointer;
+    transform: scale(1.5); /* Memperbesar menggunakan transformasi */
+    display: inline-block;
+}
+
+header .title {
+    font-size: 1.8rem;
+}
+
+header .kanan {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 100%;
+    height: 10vh;
+    margin-left: 1rem;
+}
+
+header .menu {
+    transform: scale(1.2);
+}
+
+header #hamburger{
+    color: #000;
+    margin-right: 1rem;
+}
+
+.content1, .content2, .content3 {
+    padding: 18vh 4rem 3rem;
+    position: absolute;
+    color: rgba(0, 0, 0, 0);
+    transition:  0.3s ease-in;
+}
+.content1.active, .content2.active, .content3.active {
+    color: rgba(0, 0, 0, 1);
+}
+
+.content1 .title, .content2 .title, .content3 .title{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.content1 .article, .content2 .article, .content3 .article, {
+    text-align: justify;
+    padding-left: 1rem;
+}
+
+.article ol, .article ul {
+    padding-left: 2rem;
+}
+
+.menudisplay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    display: none;
+    /* margin-top: -100px;
+    margin-left: -100px; */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menudisplay.active {
+    display: inline-block;
+}
+
+.menudisplay .displaycard {
+    margin: 5rem auto;
+    height: 80%;
+    width: 38%;
+    background-color: #eaeaea;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.menudisplay .displaycard h2 {
+    padding: 2rem;
+    padding-bottom: 0;
+}
+
+.menudisplay .displaycard p {
+    margin: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+.menudisplay .displaycard a {
+    display: inline-block; /* Ubah elemen menjadi blok inline */
+    width: 80%; /* Tetapkan lebar seragam */
+    height: 11vh; /* Tetapkan tinggi seragam */
+    text-align: center; /* Pusatkan teks secara horizontal */
+    line-height: 10vh;
+    text-decoration: none; /* Hilangkan garis bawah */
+    color: #000; /* Warna teks */
+    border: 2px solid #000; /* Tambahkan border */
+    border-radius: 10px; /* Opsional: sudut melengkung */
+    /* Opsional: warna latar */
+    margin: 1rem auto; /* Jarak antar elemen */
+    transition: transform 0.3s ease-in-out;
+    font-size: 1rem;
+    bot: 0;
+}
+
+footer {
+    background: rgba(127, 234, 255, 0.5);
+    background: linear-gradient(100deg, #bbdffb 0%, #90cbf9 54%, #64b7f6 100%);
+    padding: 0.5rem;
+    text-align: center;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    bottom: 0%;
+    width: 100%;
+}
+
+/* Media Queries */
+
+/* Tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 80%;
+    }
+
+    .menudisplay .displaycard {
+        height: 80%;
+        width: 60%;
+        font-size: 150%;
+    }
+    .menudisplay .displaycard a {
+        font-size: 95%;
+    }
+}
+
+/* Handphone */
+@media (max-width: 450px) {
+    html {
+        font-size: 60%;
+    }
+
+    .menudisplay .displaycard {
+        height: 70%;
+        width: 66%;
+        font-size: 150%;
+    }
+    .menudisplay .displaycard a {
+        font-size: 98%;
+    }
+}

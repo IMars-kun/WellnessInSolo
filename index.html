@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>WellnessCity</title>
+
+        <!-- Google Font Poppins -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Js Swipper -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+
+        <!-- Feather Icons -->
+        <script src="https://unpkg.com/feather-icons"></script>
+
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header>
+            <div class="logo"><img src="image/Logo.png" alt="logo" /></div>
+            <div class="title"><a href="#" class="title">WellnessInSolo</a></div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#tujuan">Tujuan</a></li>
+                    <li><a href="#sejarah">Sejarah</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="extraNav">
+                <ul>
+                    <li>
+                        <a href="##" id="hamburger"
+                            ><i data-feather="menu"></i
+                        ></a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <section class="hero swiper" id="hero">
+            <div class="herowrap">
+                <ul class="herolist swiper-wrapper">
+                    <li class="heroitem swiper-slide">
+                        <a href="https://jatengprov.go.id/beritadaerah/solo-jadi-percontohan-wellness-city-di-indonesia/" class="herocard" id="hero1">
+                            <img src="image/berita1.jpg" alt="heroimg" />
+                            <div class="herotext">
+                                <h3>Jatengprov</h3>
+                                <p>
+                                    Solo Jadi Percontohan “Wellness City” di Indonesia
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="heroitem swiper-slide">
+                        <a href="https://www.tempo.co/ekonomi/ketua-hipmi-solo-beberkan-strategi-bangkitkan-wellness-tourism-di-kota-bengawan-206695" class="herocard" id="hero2">
+                            <img
+                                src="image/berita2.jpg"
+                                alt="heroimg"
+                            />
+                            <div class="herotext">
+                                <h3>Tempo.co</h3>
+                                <p>
+                                    Ketua HIPMI Solo Beberkan Strategi Bangkitkan Wellness Tourism di Kota Bengawan
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="heroitem swiper-slide">
+                        <a href="https://www.tempo.co/hiburan/tren-wellness-tourism-india-peringati-hari-yoga-internasional-di-solo-46641" class="herocard" id="hero2">
+                            <img
+                                src="image/berita3.jpg"
+                                alt="heroimg"
+                            />
+                            <div class="herotext">
+                                <h3>Tempo.co</h3>
+                                <p>
+                                    Tren Wellness Tourism, India Peringati Hari Yoga Internasional di Solo
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="heroitem swiper-slide">
+                        <a href="https://www.rri.co.id/wisata/779472/ketua-kadin-sebut-wellness-tourism-jadi-magnet-wisatawan-soloraya" class="herocard" id="hero2">
+                            <img src="image/berita4.jpeg" alt="heroimg" />
+                            <div class="herotext">
+                                <h3>rri.co.id</h3>
+                                <p>
+                                    Ketua Kadin Sebut Wellness Tourism Jadi Magnet Wisatawan Soloraya
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+        <section class="menu" id="menu">
+            <ul class="cardmenu">
+                <li>
+                    <a href="edukasi.html" class="card" id="edukasi">Edukasi</a>
+                </li>
+                <li>
+                    <a href="Volunteer.html" class="card" id="volunteer"
+                        >Volunteer</a
+                    >
+                </li>
+                <li>
+                    <div class="double">
+                        <a  href="wisata.html" class="card doubles" id="wisata"
+                            >Wisata Wellness</a
+                        >
+                    </div>
+                </li>
+                <li>
+                    <a href="##" class="card" id="forum">Komunitas</a>
+                </li>
+                <li>
+                    <a
+                        href="hijau.html"
+                        class="card"
+                        id="ruanghijau"
+                        >Ruang Hijau</a
+                    >
+                </li>
+                <li>
+                    <a href="seni.html" class="card" id="seni"
+                        >Seni</a
+                    >
+                </li>
+                <li>
+                    <a href="kuliner.html" class="card" id="kuliner"
+                        >Kuliner</a
+                    >
+                </li>
+                <li>
+                    <a onclick="belumJadi()" href="##" class="card" id="lain"
+                        >Lain-lain</a
+                    >
+                </li>
+            </ul>
+        </section>
+        <div class="menudisplay">
+            <div class="displaycard">
+                <h2>Our Community</h2>
+                <p>
+                    Ayo Join Komunitas Kami, Bersama Kita Wujudkan Solo Menjadi Kota Wellness
+                </p>
+                <a href="#" class="wa"
+                    ><img src="image/whatsapp.png" alt="" />WhatsApp</a
+                >
+                <a href="#" class="tele"
+                    ><img src="image/round.png" alt="" />Telegram</a
+                >
+            </div>
+        </div>
+        <div class="popup active">
+            <div class="popupcard">
+                <!-- <i data-feather="x" class="x-button"></i> -->
+                <h1>Welcome to Our Website</h1>
+                <p>
+                    Website WellnessInSolo merupakan laman website untuk memperkenalkan Kota Surakarta sebagai Kota Wellness City di Indonesia. Wellness city adalah konsep pengembangan kota yang mendukung kesehatan dan kebugaran Masyarakat. Hal ini juga untuk mengembangkan sektor pariwisata dan mendukung adanya Wellness Tourism atau Wisata Kesehatan di Kota Surakarta. 
+                    </p> 
+                <p class="klik">
+                    > klik bagian luar untuk melanjutkan <
+                </p>
+                </div>
+            </div>
+        </section>
+        <section class="tujuan" id="tujuan">
+            <div class="headtujuan">
+                <h1>Tujuan</h1>
+            </div>
+            <div class="tujuancontent">
+                <div class="lefttujuan">
+                    <img src="image/kota1.jpg" alt="imgtujuan" />
+                </div>
+                <div class="articletujuan">
+                    <h3>Diciptakannya WellnessCity</h3>
+                    <p>
+                        untuk menciptakan lingkungan perkotaan yang sehat, berkelanjutan, dan berkualitas tinggi bagi penduduknya. Konsep ini mengintegrasikan aspek kesehatan fisik, mental, dan sosial melalui perencanaan kota yang ramah lingkungan, infrastruktur hijau, akses mudah ke fasilitas kesehatan, serta desain yang mendukung gaya hidup aktif dan kesejahteraan masyarakat. Dengan demikian, Wellness City bertujuan untuk meningkatkan kualitas hidup, mengurangi dampak negatif urbanisasi, serta menciptakan komunitas yang lebih harmonis dan produktif.
+                    </p>
+                </div>
+                <div class="righttujuan">
+                    <img src="image/kota2.jpg" alt="imgtujuan" />
+                </div>
+            </div>
+        </section>
+        <section class="sejarah" id="sejarah">
+            <div class="headsejarah">
+                <h1>Sejarah</h1>
+            </div>
+            <div class="sejarahcontent">
+                <div class="articlesejarah">
+                    <h3>Wellness</h3>
+                    <p>
+                        Pada abad ke-21, wellness telah menjadi fenomena global yang memengaruhi berbagai industri, termasuk makanan dan minuman, perjalanan, dan real estat. Program wellness di tempat kerja menjadi umum, dan tokoh-tokoh seperti Dr. Mehmet Oz, Deepak Chopra, dan Andrew Weil menjadi terkenal dalam mempromosikan gaya hidup sehat. Pergeseran fokus dari pengobatan penyakit ke pencegahan dan promosi kesehatan terjadi seiring dengan meningkatnya biaya perawatan kesehatan dan prevalensi penyakit kronis. Institusi medis terkemuka mulai mengintegrasikan pengobatan komplementer dan preventif ke dalam praktik mereka. Selain itu, inisiatif seperti pengenalan pajak minuman manis di berbagai negara dan penerapan Indeks Kebahagiaan Nasional di Bhutan menunjukkan pengakuan global akan pentingnya wellness dalam kebijakan publik. 
+                    </p>
+                </div>
+                <aside class="rightsejarah">
+                    <img src="image/kota3.jpg" alt="imgsejarah" />
+                </aside>
+            </div>
+        </section>
+        <div class="headcontact">
+            <h1>Contact Us</h1>
+            <section class="contact" id="contact">
+                <div class="contactcontent">
+                    <div class="articlecontact">
+                        <article>
+                            <h3>WhatsApp</h3>
+                            <a id="wh" href="#">CP 1</a>
+                            <a id="wh" href="#">CP 2</a>
+                        </article>
+                        <div class="medsos">
+                            <h3>Media Sosial</h3>
+                            <ul>
+                                <li><a id="ig" href="#">Instagram</a></li>
+                                <li><a id="tt" href="#">Tiktok</a></li>
+                            </ul>
+                        </div>
+                        <aside>
+                            <h3>E-Mail</h3>
+                            <a href="">Example@gmail.com</a>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- <section class="setting" id="setting">
+            <div class="addres"><p>Surakarta</p></div>
+        </section> -->
+
+        <footer class="copyright"><p>©WellnessInSolo</p></footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            feather.replace();
+        </script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

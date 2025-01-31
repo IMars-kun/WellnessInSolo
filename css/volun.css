@@ -1,0 +1,263 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: rgba(127, 234, 255, 0.5);
+    background: linear-gradient(100deg, #bbdffb 0%, #90cbf9 54%, #64b7f6 100%);
+    padding: 1rem 2rem;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #000;
+    z-index: 99998;
+}
+
+header .back {
+    cursor: pointer;
+    transform: scale(1.5); /* Memperbesar menggunakan transformasi */
+    display: inline-block;
+}
+
+header .logo img {
+    width: 100%;
+    height: 10vh;
+}
+
+header .title {
+    font-size: 1.3rem;
+}
+
+.container {
+    margin: 3rem 5rem;
+    margin-top: 1rem;
+}
+
+.container .header {
+    text-align: center;
+}
+
+.container h1 {
+    margin-bottom: 2rem;
+}
+
+.container p {
+    text-align: justify;
+    margin-top: 3rem
+}
+
+.content p, .content ol{
+    font-size: 140%;
+}
+
+.content ol {
+    margin-left: 3rem;
+}
+
+.documentation {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.documentation .title {
+    padding: 2rem;
+    border-top: 3px solid blue;
+    border-bottom: 3px solid blue;
+    margin-bottom: 2rem;
+}
+
+.documentation .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 85%;
+    height: 81.6vh;
+    margin: 0 auto;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.documentation .content .img {
+    /* background: #eaeaea; */
+    /* border-radius: 8px; */
+    text-align: center;
+    /* box-shadow: 0 0.3rem 0.7rem rgba(0, 0, 0, 0.1); */
+    border-bottom: 1px solid #000;
+}
+
+.documentation .content img {
+    wight: 100%;
+    height: 28vh;
+    margin-top: 1rem;
+    border-radius: 8px;
+}
+
+.documentation .content .img img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.button {
+    margin: 2rem 0 4rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Tombol Simple dan Elegan */
+.button button {
+    background-color: #4caf50; /* Warna hijau elegan */
+    color: white; /* Teks putih agar kontras */
+    border: none; /* Hilangkan border default */
+    border-radius: 8px; /* Sudut melengkung */
+    padding: 1rem 1.7rem; /* Spasi dalam tombol */
+    font-size: 1rem; /* Ukuran font */
+    font-family: "Arial", sans-serif; /* Font modern dan bersih */
+    cursor: pointer; /* Pointer untuk interaksi */
+    transition: background-color 0.3s, transform 0.2s; /* Animasi transisi */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+}
+
+.button button:hover {
+    background-color: #45a049; /* Warna hijau lebih gelap saat hover */
+    transform: scale(1.05); /* Sedikit memperbesar tombol */
+}
+
+.button button:active {
+    background-color: #3e8e41; /* Warna lebih gelap saat ditekan */
+    transform: scale(0.98); /* Sedikit mengecilkan tombol */
+}
+
+.button button:disabled {
+    background-color: #ccc; /* Warna abu-abu saat tidak aktif */
+    color: #666; /* Warna teks lebih redup */
+    cursor: not-allowed; /* Ikon tidak diperbolehkan */
+    box-shadow: none; /* Hilangkan bayangan */
+}
+
+/* General form container styling */
+.form {
+    display: none;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: "Arial", sans-serif;
+}
+
+.form.active {
+    display: grid;
+}
+
+/* Form heading styling */
+.form h3 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Label styling */
+.form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Input fields styling */
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="radio"],
+.form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.form input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+/* Placeholder styling */
+.form input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+/* Submit button styling */
+.form input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Radio button label inline styling */
+.form label input[type="radio"] + span {
+    display: inline;
+    font-size: 0.9rem;
+}
+
+/* Focus and active state styling */
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form input[type="radio"]:focus {
+    border-color: #4caf50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+footer {
+    background: rgba(127, 234, 255, 0.5);
+    background: linear-gradient(100deg, #bbdffb 0%, #90cbf9 54%, #64b7f6 100%);
+    padding: 0.5rem;
+    text-align: center;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 60%;
+    }
+
+    .form {
+        padding: 15px;
+    }
+
+    .form h3 {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo Wellness Connect</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: linear-gradient(135deg, #f9f9f9, #e0f7fa);
+        }
+
+        header {
+            background: #1e88e5;
+            color: white;
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .menu, .sign{
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu li a, .sign li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 25px;
+            font-size: 0.9em;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .menu li a:hover {
+            background-color: #1565c0;
+            transform: scale(1.1);
+        }
+
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            color: #1565c0;
+            margin-bottom: 20px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            padding: 25px;
+            width: 280px;
+            text-align: left;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        article {
+            margin-bottom: 20px;
+        }
+
+        .calendar-list {
+            text-align: left;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .calendar-list a {
+            display: block;
+            margin: 10px 0;
+            color: #1565c0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .calendar-list a:hover {
+            text-decoration: underline;
+        }
+
+        button {
+            background: #1e88e5;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1em;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        button:hover {
+            background: #1565c0;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: #1565c0;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        .social-media a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        .social-media a:hover {
+            color: #90caf9;
+        }
+
+        @media (max-width: 768px) {
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .menu {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .menu li a {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Solo Wellness Connect</div>
+            <div class="navbar">
+                <ul class="menu">
+                    <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#collaboration">Program Kolaborasi</a></li>
+                    <li><a href="#education">Ruang Edukasi</a></li>
+                    <li><a href="#forum">Forum Diskusi</a></li>
+                    <li><a href="#volunteering">Volunteering</a></li>
+                </ul>
+                <ul class="sign">
+                    <li><a href="#">SIGN UP</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="dashboard" class="section">
+            <h1>Dashboard Informasi</h1>
+            <div class="cards">
+                <div class="card" onclick="alert('Detail berita terbaru!')">
+                    <h2>Berita 1</h2>
+                    <p>Update terkini proyek Solo Wellness City.</p>
+                </div>
+                <div class="card" onclick="alert('Detail berita terbaru!')">
+                    <h2>Berita 2</h2>
+                    <p>Inisiatif pemerintah untuk kesehatan lingkungan.</p>
+                </div>
+                <div class="card" onclick="alert('Detail berita terbaru!')">
+                    <h2>Berita 3</h2>
+                    <p>Kampanye terbaru untuk pemuda Solo.</p>
+                </div>
+            </div>
+            <div class="content">
+                <h2>Kebijakan Pemerintah</h2>
+                <p>Pemerintah Solo telah menerapkan kebijakan untuk mendukung pengelolaan lingkungan berkelanjutan dan infrastruktur ramah lingkungan. Fokus utamanya adalah memperkuat kolaborasi dengan masyarakat untuk mencapai target Wellness City.</p>
+            </div>
+            <div class="calendar-list">
+                <h2>Kalender Acara</h2>
+                <a href="#">Webinar: Masa Depan Wellness City</a>
+                <a href="#">Workshop: Desain Ruang Hijau</a>
+                <a href="#">Pembersihan Kota: Solo Bersih</a>
+            </div>
+        </section>
+
+        <section id="collaboration" class="section">
+            <h1>Program Kolaborasi</h1>
+            <div class="cards">
+                <div class="card">
+                    <h2>Ide dan Inisiatif Pemuda</h2>
+                    <p>Unggah ide dan proposal untuk proyek kota.</p>
+                </div>
+                <div class="card">
+                    <h2>Pendanaan Pemerintah</h2>
+                    <p>Informasi hibah dan dukungan dari pemerintah.</p>
+                </div>
+                <div class="card">
+                    <h2>Proyek Bersama</h2>
+                    <p>Daftar proyek yang sedang berjalan.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <h1>Ruang Edukasi</h1>
+            <div class="content">
+                <article>
+                    <h2>Artikel & Infografis</h2>
+                    <p>Konten edukasi untuk mendukung Wellness City.</p>
+                </article>
+                <article>
+                    <h2>Panduan Kontribusi</h2>
+                    <p>Langkah-langkah untuk memulai aksi nyata.</p>
+                </article>
+                <article>
+                    <h2>Praktik Terbaik</h2>
+                    <p>Inspirasi dari kota lain yang sukses.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="forum" class="section">
+            <h1>Forum Diskusi</h1>
+            <p>Diskusikan ide-ide dan solusi terbaik untuk Solo.</p>
+            <button id="join-forum">Gabung Forum</button>
+        </section>
+
+        <section id="volunteering" class="section">
+            <h1>Volunteering dan Internship</h1>
+            <p>Pendaftaran untuk menjadi sukarelawan atau mengikuti program magang.</p>
+            <button id="volunteer-now">Daftar Sekarang</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Solo Wellness Connect. Semua hak dilindungi.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Fitur ini sedang dalam pengembangan. Terima kasih atas partisipasi Anda!');
+            });
+        });
+    </script>
+</body>
+</html>
